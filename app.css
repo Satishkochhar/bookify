@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+
+body {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #000;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1140px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+ul {
+    list-style-type: none;
+}
+.brand img {
+    width: 9vw;
+}
+
+.site-header {
+    position: relative;
+    background-color: #fff;
+}
+
+.site-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.site-end i:hover {
+    color: #e63946;
+}
+
+@media (min-width: 660px) {
+    .site-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 659px) {
+    .site-end {
+        padding-right: 4rem;
+    }
+}
+
+@media (min-width: 660px) {
+    .n-wrapper {
+        display: flex;
+        list-style-type: none;
+    }
+}
+
+@media (max-width: 659px) {
+    .n-wrapper {
+        position: absolute;
+        top: 100%;
+        list-style-type: none;
+        right: 0;
+        left: 0;
+        background-color: #d9f0f7;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        z-index: 1;
+    }
+    .n-wrapper.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.n-item a {
+    display: block;
+    padding: 1.5rem 1rem;
+    font-weight: 600;
+}
+
+.n-item a:hover {
+    color: #e63946;
+}
+
+.n-toggle {
+    display: none;
+}
+@media (max-width: 659px) {
+    .n-toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+}
+
+.landing {
+    width: 100vw;
+    background-color: #f1faee;
+    background-image: url(./pic/landing/1.jpg);
+    height: 80vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.landing2 {
+    background-image: url(./pic/landing/4.jpg);
+    background-size: cover;
+}
+.landing5 {
+    background-image: url(./pic/landing/5.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.landing3 {
+    background-image: url(./pic/landing/3.jpg);
+    background-repeat: no-repeat;
+}
+.landing4 {
+    background-image: url(./pic/landing/2.jpg);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.landing h1 {
+    margin: 0;
+    text-align: right;
+    padding-top: 15rem;
+    padding-left: 55rem;
+    padding-right: 10rem;
+    font-size: 90px;
+    color: #e63946;
+    text-shadow: 2px 2px #000;
+}
+
+.landing button {
+    position: absolute;
+    right: 10rem;
+    cursor: pointer;
+    background-color: #1d3557;
+    border: 0.2rem solid #1d3557;
+    border-radius: 0.4rem;
+    color: white;
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 10%;
+}
+@media (max-width: 659px) {
+    .landing h1 {
+        text-align: center;
+        padding-top: 15rem;
+        padding-left: 6rem;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+    }
+    .landing button {
+        width: 30%;
+    }
+}
+.landing button a {
+    color: white;
+}
+.landing button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.116);
+}
+
+.landing button:active {
+    transform: translateY(-1px);
+    outline: 0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    width: 70%;
+    margin: 100px auto;
+}
+
+.section h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.card {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+    margin: 20px 15px;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: #457b9d;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: transform 0.5s ease;
+}
+@media (max-width: 659px) {
+    .card {
+        width: 100%;
+    }
+    iframe {
+        height: 360px;
+    }
+}
+
+.h22 {
+    display: block;
+    margin: 0 auto;
+}
+.in {
+    display: inline;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.red {
+    background-color: #e63946;
+    height: 150px;
+    padding-top: 30px;
+}
+hr {
+    width: 75%;
+    border-bottom: 2px solid darkred;
+}
+.card img {
+    padding-top: 20px;
+    width: 80%;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+.hidden {
+    visibility: visible;
+}
+@media (max-width: 659px) {
+    .hidden {
+        visibility: hidden;
+    }
+}
+.card .img i {
+    position: absolute;
+    top: 5%;
+    color: red;
+    right: 0;
+    font-weight: 200;
+    transform: translate(-50%, -50%) scale(0);
+}
+.card:hover i {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+footer {
+    background-color: #a8dadc;
+    width: 100%;
+}
+footer:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.footer {
+    width: 80%;
+    margin: 10rem auto;
+}
+
+.end {
+    font-weight: 100;
+    width: 25%;
+    float: left;
+    margin-top: 60px;
+}
+
+ul.text {
+    font-size: 15px;
+}
+p.text {
+    font-size: 15px;
+}
+.contact {
+    width: 70%;
+    margin: 50px auto;
+}
+.contact .form {
+    padding: 2rem 4rem;
+    width: 50%;
+}
+
+.contact .form-control {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.contact .form-control input {
+    border: 0.2rem solid #000;
+    display: block;
+    width: 80%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.contact .form button,
+.section button {
+    cursor: pointer;
+    background-color: #1d3557;
+    border: 0.2rem solid #1d3557;
+    border-radius: 0.4rem;
+    color: white;
+    width: 20%;
+    display: block;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+.section button {
+    width: 40%;
+    margin: 20px auto;
+}
+.section button a {
+    color: white;
+}
+.contact .form button:hover,
+.section button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2);
+}
+
+.contact .half {
+    padding: 2rem 4rem;
+}
+
+.contact .half ol {
+    list-style-type: none;
+    line-height: 5rem;
+    font-size: 1.5rem;
+}
+
+.contact .half p a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/*
+color scheme: e63946 red ,f1faee cream,a8dadc light blue,457b9d blue ,1d3557 dark blue
+page layout: jello
+face font: Raleway
+weight: 300;400;500;600;700
+heading size: 90px
+subhaeding size: 30px
+
+
+*/
